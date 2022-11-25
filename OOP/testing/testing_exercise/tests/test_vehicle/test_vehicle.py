@@ -12,7 +12,7 @@ class TestVehicle(TestCase):
         self.assertEqual(150.50, self.vehicle.horse_power)
         self.assertEqual(self.vehicle.capacity, self.vehicle.fuel)
 
-        self.assertEqual(1.25, self.vehicle.DEFAULT_FUEL_CONSUMPTION)
+        self.assertEqual(1.25, Vehicle.DEFAULT_FUEL_CONSUMPTION)
         self.assertEqual(self.vehicle.fuel_consumption, self.vehicle.DEFAULT_FUEL_CONSUMPTION)
 
     def test_if_the_fuel_is_decreased_after_driving(self):
