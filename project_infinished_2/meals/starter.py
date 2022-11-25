@@ -1,4 +1,4 @@
-from project.meals.meal import Meal
+from OOP.testing.testing_exercise.projects_to_test.project_mammal import Meal
 
 
 class Starter(Meal):

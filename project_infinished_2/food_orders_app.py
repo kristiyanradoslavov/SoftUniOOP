@@ -1,7 +1,7 @@
-from project.client import Client
-from project.meals.dessert import Dessert
-from project.meals.main_dish import MainDish
-from project.meals.starter import Starter
+from OOP.testing.testing_exercise.projects_to_test.project_mammal import Client
+from OOP.testing.testing_exercise.projects_to_test.project_mammal import Dessert
+from OOP.testing.testing_exercise.projects_to_test.project_mammal import MainDish
+from OOP.testing.testing_exercise.projects_to_test.project_mammal import Starter
 
 
 class FoodOrdersApp:
