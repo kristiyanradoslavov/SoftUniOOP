@@ -42,7 +42,7 @@ manager.manage()
 super_worker = SuperWorker()
 try:
     manager.set_worker(super_worker)
-    manager.manage()
 except AssertionError:
     print("manager fails to support super_worker....")
+
 

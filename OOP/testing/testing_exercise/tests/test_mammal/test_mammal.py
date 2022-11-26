@@ -12,7 +12,7 @@ class TestMammal(TestCase):
         self.assertEqual("Bear", self.mammal.name)
         self.assertEqual("predator", self.mammal.type)
         self.assertEqual("Roar", self.mammal.sound)
-        self.assertEqual("animals", self.mammal._Mammal__kingdom)
+        self.assertEqual("  ", self.mammal._Mammal__kingdom)
 
     def test_if_animal_func_returns_sound(self):
         self.assertEqual("Bear makes Roar", self.mammal.make_sound())
