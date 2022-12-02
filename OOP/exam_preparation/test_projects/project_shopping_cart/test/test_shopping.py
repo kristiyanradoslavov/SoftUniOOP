@@ -1,4 +1,4 @@
-from project.shopping_cart import ShoppingCart
+from project_unfinished_2.shopping_cart import ShoppingCart
 from unittest import TestCase, main
 
 
@@ -19,7 +19,7 @@ class TestShoppingCar(TestCase):
 
         self.assertEqual("Shop must contain only letters and must start with capital letter!", str(ve.exception))
 
-    def test_if_add_to_cart_func_with_wrong_input(self):
+    def test_add_to_cart_func_with_wrong_input(self):
         with self.assertRaises(ValueError) as ve:
             self.shop_1.add_to_cart("sirene", 100.50)
 
@@ -43,18 +43,20 @@ class TestShoppingCar(TestCase):
 
     def test_if_remove_func_removes_from_the_dict_and_returns_correct_value(self):
         self.shop_1.add_to_cart("sirene", 99)
+        self.shop_1.add_to_cart("banica", 1)
+
         return_result = self.shop_1.remove_from_cart("sirene")
         expected_return_result = "Product sirene was successfully removed from the cart!"
 
-        expected_result_in_dict = {}
+        expected_result_in_dict = {"banica": 1}
         actual_result_in_dict = self.shop_1.products
 
         self.assertEqual(expected_result_in_dict, actual_result_in_dict)
         self.assertEqual(expected_return_result, return_result)
 
     def test_if_add_func_adds_two_instances_correctly(self):
-        self.shop_1.products = {"sirene": 50.00}
-        self.shop_2.products = {"banica": 40.00}
+        self.shop_1.add_to_cart("sirene", 50.00)
+        self.shop_2.add_to_cart("banica", 40.00)
         new_shop = self.shop_1 + self.shop_2
 
         expected_name = "FantastikoKaufland"
