@@ -1,5 +1,6 @@
-from project_unfinished_2.shopping_cart import ShoppingCart
 from unittest import TestCase, main
+
+from OOP.exam_preparation.test_projects.project_shopping_cart.test.shopping_cart import ShoppingCart
 
 
 class TestShoppingCar(TestCase):
