@@ -1,4 +1,4 @@
-from project.movie_specification.movie import Movie
+from OOP.exam_preparation.class_projects.project_movie_app.movie_specification.movie import Movie
 
 
 class Thriller(Movie):

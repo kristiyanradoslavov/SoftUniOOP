@@ -1,4 +1,4 @@
-from project.bookstore import Bookstore
+from OOP.exam_preparation.class_projects.project_movie_app import Bookstore
 from unittest import TestCase, main
 
 

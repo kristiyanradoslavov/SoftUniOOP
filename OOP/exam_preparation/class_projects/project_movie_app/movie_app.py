@@ -1,8 +1,4 @@
-import xml.dom.minidom
-
-from project.movie_specification.action import Action
-from project.movie_specification.fantasy import Fantasy
-from project.user import User
+from OOP.exam_preparation.class_projects.project_movie_app.user import User
 
 
 class MovieApp:
