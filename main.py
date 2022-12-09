@@ -1,9 +1,4 @@
-from project.astronaut.astronaut_repository import AstronautRepository
-from project.astronaut.biologist import Biologist
-from project.astronaut.geodesist import Geodesist
-from project.astronaut.meteorologist import Meteorologist
-from project.planet.planet_repository import PlanetRepository
-from project.space_station import SpaceStation
+from OOP.exam_preparation.class_projects.project_space_station.space_station import SpaceStation
 
 
 station = SpaceStation()

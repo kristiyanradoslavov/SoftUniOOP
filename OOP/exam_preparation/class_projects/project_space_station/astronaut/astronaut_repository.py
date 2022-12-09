@@ -6,7 +6,6 @@ class AstronautRepository:
         self.astronauts.append(astronaut)
 
     def remove(self, astronaut):
-        # if astronaut in self.astronauts:
         self.astronauts.remove(astronaut)
 
     def find_by_name(self, name):

@@ -24,3 +24,7 @@ class Astronaut(ABC):
     @abstractmethod
     def increase_oxygen(self, amount):
         pass
+
+    @abstractmethod
+    def __str__(self):
+        pass
