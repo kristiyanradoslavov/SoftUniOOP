@@ -1,4 +1,4 @@
-from project.library import Library
+from project_christmass_pastry_shop.library import Library
 from unittest import TestCase, main
 
 
